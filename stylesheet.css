@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow : hidden;
+    margin : 0px;
+   
+    
+}
+.cointainer{
+    display: flex;
+    width : 110vh;
+   
+}
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color :whitesmoke;
+    
+    margin : 10px;
+    flex: 0.5;
+    position: relative;
+    cursor:pointer;
+    transition: flex 0.7s ease-in;
+    box-shadow: rgba(0,0,0,0.35)0px 5px 5px;
+
+}
+h3{ 
+    position: absolute;
+    font-size: 24px;
+    left: 120px;
+    bottom : 20px;
+    margin : 0px;
+    opacity: 0;
+}
+.panel.active{
+    flex : 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
